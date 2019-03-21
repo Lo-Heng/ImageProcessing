@@ -35,13 +35,13 @@
                 android:id="@+id/tv_img_width"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="width:" />
+                android:text="图片宽（像素）:" />
 
             <TextView
                 android:id="@+id/tv_img_height"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="height:" />
+                android:text="图片高（像素）:" />
         </LinearLayout>
     </LinearLayout>
 
@@ -55,23 +55,44 @@
         >
 
     </com.myimg.imageprocessing.view.model.FunctionDrawView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
     <EditText
         android:id="@+id/et_line"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:paddingLeft="5dp"
         android:paddingRight="5dp"
+        android:gravity="center"
         android:hint="请输入行数"/>
+        <Button
+            android:id="@+id/btn_confirm_line"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="确认"/>
+    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/et_gap"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:gravity="center"
+            android:hint="请输入采样间隔"/>
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:id="@+id/btn_confirm_gap"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="确认"/>
 
     </LinearLayout>
 
